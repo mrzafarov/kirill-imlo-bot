@@ -31,7 +31,3 @@ def checkWords(word, words=words):
     return {'available': availble, 'matches': matches}
 
 if __name__ == '__main__':
-        print(checkWords('сирк'))
-        print(checkWords('тарих'))
-        print(checkWords('цирк'))
-        print(checkWords('гайрат'))
