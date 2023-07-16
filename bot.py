@@ -3,12 +3,10 @@ import logging
 from aiogram import Bot, Dispatcher, executor, types
 from checkWord import checkWords
 
-API_TOKEN = '6110446453:AAELjpWZ15Uj5ipiv5H9lZmWSNf0wnqeQ30'
+API_TOKEN = 'BOT API TOKENI'
 
-# Configure logging
 logging.basicConfig(level=logging.INFO)
 
-# Initialize bot and dispatcher
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
@@ -20,7 +18,6 @@ async def send_welcome(message: types.Message):
 @dp.message_handler(commands=['help'])
 async def send_welcome(message: types.Message):
     await message.reply("Dasturchi: @MrZafarov")
-
 
 @dp.message_handler()
 async def checkImlo(message: types.Message):
